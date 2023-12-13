@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voice Based Assistance</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #e3e3b7;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .box-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .box {
+      background-color:#e7e7a2;
+      padding: var(--box-padding, 20px);
+      border-radius: var(--box-border-radius, 10px);
+      margin: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: var(--box-width, auto);
+      max-width: var(--box-max-width, 300px);
+    }
+
+    #opening-box {
+      background-color: #abab82;
+    }
+
+    #messages-box,
+    #notes-box {
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Voice Based Assistance</h1>
+
+  <div class="box-container">
+    <div class="box" id="speak-box" style="--box-width: 500px; --box-max-width: 400px; ;">
+      <p>Speak now</p>
+    </div>
+
+    <div class="box" id="opening-box" style="--box-width: 500px; --box-padding: 20px; --box-border-radius: 30px;">
+      <p>Opening notes...</p>
+    </div>
+
+
+
+    <div class="box" id="notes-box" style="--box-width: 500px; --box-max-width: 400px;">
+      <p>Click to open Notes</p>
+    </div>
+  </div>
+</body>
+
+</html>
+
